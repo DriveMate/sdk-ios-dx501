@@ -155,3 +155,5 @@ dx501RecieveManager.delegate = self;
 ```
 
 詳細はサンプルコードをご確認ください。
+（注）事前にDriveMate d-OBDの取扱説明書に従い、取付とペアリングの作業が必要です。
+（注）DriveMate d-OBDをOBDIIコネクタから外して再設置した際には、DriveMate d-OBDの取扱説明書に従い、取付とペアリングの作業が必要です。
