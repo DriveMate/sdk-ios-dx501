@@ -144,8 +144,14 @@ DX501SDKフレームワークをimportします
 
 DX501ReceiveManagerのインスタンスを生成します
 ```
-	// DX501ReceiveManagerのインスタンス生成
-    dx501RecieveManager = [DX501ReceiveManager sharedManager];
+// DX501ReceiveManagerのインスタンス生成
+dx501RecieveManager = [DX501ReceiveManager sharedManager];
+```
+
+delegateで各種通知を受け取ります
+```
+// デリゲートをセット
+dx501RecieveManager.delegate = self;
 ```
 
 詳細はサンプルコードをご確認ください。
