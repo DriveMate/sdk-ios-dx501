@@ -135,7 +135,6 @@
 				TargetAttributes = {
 					67BB57421CE2D00100E7DDD8 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = N76JP6LP4V;
 					};
 				};
 			};
@@ -307,7 +306,7 @@
 		67BB57711CE2D00200E7DDD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = N76JP6LP4V;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,7 +325,7 @@
 		67BB57721CE2D00200E7DDD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = N76JP6LP4V;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
