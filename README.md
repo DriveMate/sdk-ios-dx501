@@ -128,7 +128,7 @@ The DX501 can receive driving information from OBD2 connector of the car.**
 外部ファイルのライセンス
 ------------
 本SDKは下記のライブラリを活用しております。
-- [tropicssl](https://github.com/axic/tropicssl)
+- [tropicssl](https://github.com/axic/tropicssl/blob/master/LICENSE)
 
 要件
 ------------
