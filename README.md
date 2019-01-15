@@ -123,6 +123,12 @@ The DX501 can receive driving information from OBD2 connector of the car.**
 - 法律や公序良俗に反する用途・目的で本SDKを利用することを禁止いたします。
 - 本SDKのエラーやバグ、論理的誤り、不具合、その他の瑕疵がないこと、信頼性、完全性、正確性、有効性について一切保証しておりませんが、万が一SDKに起因する不具合などを発見した際は[こちら](mailto:software@carmate.co.jp)にお問い合わせいただけますと幸いです。
 - DriveMate d-OBD(DX501)を大量に購入する場合や協業のご依頼等は[こちら](mailto:software@carmate.co.jp)にお願いいたします。
+- プルリクエストは受け付けておりません。
+
+外部ファイルのライセンス
+------------
+本SDKは下記のライブラリを活用しております。
+- [tropicssl](https://github.com/axic/tropicssl)
 
 要件
 ------------
