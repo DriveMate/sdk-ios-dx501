@@ -161,6 +161,7 @@ dx501RecieveManager.delegate = self;
 ```
 
 詳細はサンプルコードをご確認ください。
+
 ※サンプルアプリを実行する際はSchemeをReleaseにし、iOS端末をご利用ください。シミュレータでのご利用はできません。
 
 ※事前にDriveMate d-OBDの取扱説明書に従い、取付とペアリングの作業が必要です。
