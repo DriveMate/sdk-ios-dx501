@@ -12,18 +12,18 @@
 		67BB574B1CE2D00100E7DDD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BB574A1CE2D00100E7DDD8 /* AppDelegate.m */; };
 		67BB57511CE2D00100E7DDD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BB574F1CE2D00100E7DDD8 /* Main.storyboard */; };
 		67BB57561CE2D00100E7DDD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BB57541CE2D00100E7DDD8 /* LaunchScreen.storyboard */; };
-		C8A31E2421B765DF00073BFD /* DX501SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A31E2221B765D900073BFD /* DX501SDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		C8A31E2521B765DF00073BFD /* DX501SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8A31E2221B765D900073BFD /* DX501SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFA7608022FA943000F6BDDA /* DX501SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA7606E22FA8C6900F6BDDA /* DX501SDK.framework */; };
+		EFA7608122FA943000F6BDDA /* DX501SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFA7606E22FA8C6900F6BDDA /* DX501SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C8A31E2621B765DF00073BFD /* Embed Frameworks */ = {
+		EFA7608222FA943000F6BDDA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C8A31E2521B765DF00073BFD /* DX501SDK.framework in Embed Frameworks */,
+				EFA7608122FA943000F6BDDA /* DX501SDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +40,7 @@
 		67BB57501CE2D00100E7DDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67BB57551CE2D00100E7DDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67BB57571CE2D00100E7DDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8A31E2221B765D900073BFD /* DX501SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DX501SDK.framework; sourceTree = "<group>"; };
+		EFA7606E22FA8C6900F6BDDA /* DX501SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DX501SDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8A31E2421B765DF00073BFD /* DX501SDK.framework in Frameworks */,
+				EFA7608022FA943000F6BDDA /* DX501SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 		C82CC68C21AE878F006CE03F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8A31E2221B765D900073BFD /* DX501SDK.framework */,
+				EFA7606E22FA8C6900F6BDDA /* DX501SDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 				67BB573F1CE2D00100E7DDD8 /* Sources */,
 				67BB57401CE2D00100E7DDD8 /* Frameworks */,
 				67BB57411CE2D00100E7DDD8 /* Resources */,
-				C8A31E2621B765DF00073BFD /* Embed Frameworks */,
+				EFA7608222FA943000F6BDDA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,7 +130,7 @@
 		67BB573B1CE2D00100E7DDD8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "GJMACMINI-MD388";
 				TargetAttributes = {
 					67BB57421CE2D00100E7DDD8 = {
@@ -143,6 +143,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -205,6 +206,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -250,8 +252,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "$(VALID_ARCHS) x86_64";
 			};
 			name = Debug;
 		};
@@ -259,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -300,6 +304,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "$(VALID_ARCHS) x86_64";
 			};
 			name = Release;
 		};
@@ -315,10 +320,11 @@
 				INFOPLIST_FILE = DX501SDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "---------.DX501SDKSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e";
+				VALID_ARCHS = "$(VALID_ARCHS)";
 			};
 			name = Debug;
 		};
@@ -334,10 +340,11 @@
 				INFOPLIST_FILE = DX501SDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "---------.DX501SDKSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e";
+				VALID_ARCHS = "$(VALID_ARCHS)";
 			};
 			name = Release;
 		};
